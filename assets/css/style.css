@@ -50,3 +50,9 @@ body {
     text-align: start !important;
   }
 }
+@media screen and (max-width: 600px) {
+  .warning__card {
+    width: 85% !important;
+    justify-content: center !important;
+  }
+}
