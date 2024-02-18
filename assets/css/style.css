@@ -1,0 +1,52 @@
+:root {
+  --interFont: 'Inter', sans-serif;
+  --poppinsFont: 'Poppins', sans-serif;
+  font-family: var(--poppinsFont);
+}
+html,
+body {
+  font-size: 16px;
+  background-color: #f5f5f5;
+}
+.warning__card {
+  position: fixed;
+  left: 50%;
+  bottom: -100%;
+  transform: translate(-50%, -50%);
+}
+
+.warning__card__on {
+  animation: showCardWarning 0.5s ease-in-out forwards;
+}
+.warning__card__off {
+  animation: HideCardWarning 0.5s ease-in-out forwards;
+}
+@keyframes showCardWarning {
+  from {
+    bottom: -100%;
+  }
+  to {
+    bottom: 4%;
+  }
+}
+@keyframes HideCardWarning {
+  from {
+    bottom: 4%;
+  }
+  to {
+    bottom: -100%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .container__main {
+    align-items: center !important;
+  }
+  .card__sign__in {
+    border-top-left-radius: 1.5rem !important;
+    border-top-right-radius: 1.5rem !important;
+  }
+  .card__header {
+    text-align: start !important;
+  }
+}
